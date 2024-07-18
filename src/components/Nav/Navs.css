@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "rsuite/dist/rsuite.css";
+
+/* Estilos generales */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #ebebeb;
+}
+
+/* SIDEBAR */
+
+  .sidebar {
+    width: 13%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    max-height: fit-content;
+    display: block;
+  }
+
+  .user-info {
+    text-align: center;
+    margin-bottom: 50%;
+    margin-top: 20%;
+    font-size: 1.3rem
+  }
+
+
+  .rs-nav-item {
+    justify-content: left;
+    margin-left: 18%;
+    margin-right: 9%;
+    margin-top: 10%;
+    font-size: 1.25rem
+  }
+
+  .nav-item-manual{
+    margin-top: 90%;
+    /* margin-top: 130%; */
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #555454;
+    margin: 0 auto;
+  }
+
+  .user-name {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* .rs-nav-item, .rs-nav-item:active {
+    color: #bb1919;
+  } */
+
+/* SIDEBAR */
+

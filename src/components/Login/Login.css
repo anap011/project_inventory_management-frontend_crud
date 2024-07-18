@@ -1,0 +1,48 @@
+.custom-form {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa todo el alto de la pantalla */
+    background-color: white; /* Fondo blanco */
+    font-family: Arial, sans-serif; /* Fuente Arial */
+}
+
+.custom-form form {
+    width: 300px; /* Ancho del formulario */
+    padding: 20px;
+    border: 1px solid black; /* Borde negro */
+    border-radius: 5px;
+    background-color: white; /* Fondo blanco */
+    text-align: center; /* Centrado del contenido */
+}
+
+.custom-label {
+    display: block;
+    margin-bottom: 10px;
+    color: black; /* Color de texto negro */
+}
+
+.custom-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid black; /* Borde negro */
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Fuente Arial */
+}
+
+.custom-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Fuente Arial */
+}
+
+.custom-button:hover {
+    background-color: #635f5f; /* Color de fondo oscuro al pasar el ratón */
+}

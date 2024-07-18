@@ -1,0 +1,9 @@
+
+.container{
+    display: flex;
+    margin-left: 8%;
+    margin-top: 10%;
+    width: fit-content;
+    background-color: aliceblue;
+    color: rgb(36, 34, 34);
+}
