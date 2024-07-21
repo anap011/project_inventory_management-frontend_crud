@@ -1,15 +1,15 @@
 import './Navs.css';
-//import React, { useState, useEffect } from 'react';
-import { Nav } from 'rsuite';
-import { Link } from 'react-router-dom';
+import { Nav  } from 'rsuite';
+import AdminIcon from '@rsuite/icons/Admin';
 
 const Navs = () => {
+  const user = localStorage.getItem('user');
 
     return (
         <div className='sidebar'>
           <div className="user-info">
-            <div className="avatar"></div>
-            <div className="user-name">User 1</div>
+            <div className="avatar"><AdminIcon/></div>
+            <div className="user-name">{user}</div>
           </div>
           <div className='nav-tabs'>
             <Nav vertical appearance='default'>

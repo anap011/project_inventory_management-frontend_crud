@@ -19,7 +19,7 @@ let tokenExistAndStillValid = false;
 try {
     const token = localStorage.getItem('token');
     if (token) {
-        tokenExistAndStillValid = parseJwt(token).exp * 1000 > Date.now();
+        tokenExistAndStillValid = (parseJwt(localStorage.getItem('token')).exp * 1000 > Date.now());
     }
 } catch (error) {
     console.error('Error parsing token:', error);

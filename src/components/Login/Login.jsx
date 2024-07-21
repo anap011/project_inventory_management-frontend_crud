@@ -1,16 +1,18 @@
 import {useState} from "react";
 import './Login.css';
 import Home from "../Home/Home.jsx";
+
 const Login = () => {
-    const [password, setPassword] = useState('');
+    const [password_hash, setPassword] = useState('');
     const [username, setUsername] = useState('');
     const [loginSuccessful, setLoginSuccessful] = useState(false);
 
     // Función para manejar el inicio de sesión
     const handdleLogin = (e) =>{
+        e.preventDefault();
         const data = { // Datos a enviar al servidor para autenticación
             username: username,
-            password: password
+            password_hash: password_hash
         };
         fetch('http://localhost:3001/login', {
             method: 'POST',
@@ -24,6 +26,7 @@ const Login = () => {
                 console.log(result.token)
                 if(result.token){
                     localStorage.setItem('token', result.token)  //almacenar token en localStorage
+                    localStorage.setItem('user', username)
                     setLoginSuccessful(true);
                 } else {
                     setLoginSuccessful(false);
@@ -32,7 +35,6 @@ const Login = () => {
             .catch(error =>{
                 console.log(error)
             })
-            
     };
     return(
         <>{loginSuccessful ? <Home />: <div className="custom-form">
@@ -52,6 +54,5 @@ const Login = () => {
         </div>}</>
     );
 }
-
 
 export default Login;

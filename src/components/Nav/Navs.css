@@ -12,10 +12,11 @@ body, html, #root {
 /* SIDEBAR */
 
   .sidebar {
-    width: 13%;
+    width: 15%;
+    height: 100vh;
     background-color: #d3d3d3;
     padding: 20px;
-    max-height: fit-content;
+    min-height: fit-content;
     display: block;
   }
 
@@ -41,11 +42,17 @@ body, html, #root {
   }
 
   .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #555454;
     margin: 0 auto;
+    font-size: 10vh;
+  }
+
+  .icon-item .icon-svg {
+    display: block;
+    font-size: 36px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;  
   }
 
   .user-name {
