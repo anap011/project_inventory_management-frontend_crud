@@ -1,7 +1,6 @@
 import Login from "../Login/Login.jsx";
 import Home from "../Home/Home.jsx";
 
-// Parciar el token
 function parseJwt (token) {
     if (!token) return null; 
     const base64Url = token.split('.')[1];
@@ -13,9 +12,7 @@ function parseJwt (token) {
     return JSON.parse(jsonPayload);
 }
 
-// Validar que el token exista y sea valido
 let tokenExistAndStillValid = false;
- //let tokenExistAndStillValid = (parseJwt(localStorage.getItem('token')).exp * 1000 > Date.now());
 try {
     const token = localStorage.getItem('token');
     if (token) {

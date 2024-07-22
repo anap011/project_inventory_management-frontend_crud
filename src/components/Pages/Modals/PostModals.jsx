@@ -36,7 +36,7 @@ const PostModals = ({ open, handleClose, labels, labelskeys, endpoint }) => {
         };
       
         try {
-          const response = await fetch(`${url}/${endpoint}/create`, options);
+          const response = await fetch(`${url}/v1/${endpoint}`, options);
       
           if (response.ok) {
             toaster.push(

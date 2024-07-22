@@ -1,68 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "rsuite/dist/rsuite.css";
 
-/* Estilos generales */
 body, html, #root {
   height: 100%;
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #ebebeb;
+  background-color: #dad9d9;
 }
 
-/* SIDEBAR */
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  background-color: #d3d3d3;
+  padding: 20px;
+  min-height: fit-content;
+  display: block;
+}
 
-  .sidebar {
-    width: 15%;
-    height: 100vh;
-    background-color: #d3d3d3;
-    padding: 20px;
-    min-height: fit-content;
-    display: block;
-  }
-
-  .user-info {
-    text-align: center;
-    margin-bottom: 50%;
-    margin-top: 20%;
-    font-size: 1.3rem
-  }
+.user-info {
+  text-align: center;
+  margin-bottom: 50%;
+  margin-top: 20%;
+  font-size: 1.3rem
+}
 
 
-  .rs-nav-item {
-    justify-content: left;
-    margin-left: 18%;
-    margin-right: 9%;
-    margin-top: 10%;
-    font-size: 1.25rem
-  }
+.rs-nav-item {
+  justify-content: left;
+  margin-left: 18%;
+  margin-right: 9%;
+  margin-top: 10%;
+  font-size: 1.25rem
+}
 
-  .nav-item-manual{
-    margin-top: 90%;
-    /* margin-top: 130%; */
-  }
+.nav-item-manual{
+  margin-top: 90%;
+}
 
-  .avatar {
-    margin: 0 auto;
-    font-size: 10vh;
-  }
+.avatar {
+  margin: 0 auto;
+  font-size: 10vh;
+}
 
-  .icon-item .icon-svg {
-    display: block;
-    font-size: 36px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    width: 100%;  
-  }
+.icon-item .icon-svg {
+  display: block;
+  font-size: 36px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;  
+}
 
-  .user-name {
-    font-weight: bold;
-    margin-top: 10px;
-  }
+.user-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
 
-  /* .rs-nav-item, .rs-nav-item:active {
-    color: #bb1919;
-  } */
-
-/* SIDEBAR */
 

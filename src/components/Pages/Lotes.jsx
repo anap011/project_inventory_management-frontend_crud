@@ -6,9 +6,9 @@ import PostModals from './Modals/PostModals';
 import PutModals from './Modals/PutModals';
 import DeleteModals from './Modals/DeleteModals';
 
-const labels = (['Id','Nombre *']);
-const labelskeys = (['batch_Id', 'batch_Name']);
-const endpoint = "batch";
+const labels = (['Id','Nombre']);
+const labelskeys = (['lote_Id', 'lote_Nombre']);
+const endpoint = "lotes";
 
 const Lotes = () => {
   const {Column, HeaderCell, Cell} = Table;
@@ -32,7 +32,7 @@ const Lotes = () => {
   // Delete Modals
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const handleOpenDeleteModal = (rowData) => {
-    setIdRow(rowData.batch_Id);
+    setIdRow(rowData.lote_Id);
     setOpenDeleteModal(true);
   };
   const handleCloseDeleteModal = () => setOpenDeleteModal(false);
@@ -55,12 +55,12 @@ const Lotes = () => {
             console.log(rowData);
           }} >
 
-          <Column width={60} align="center" resizable  className="column">
+          <Column width={200} align="center" resizable  className="column">
             <HeaderCell className="column-item">{labels[0]}</HeaderCell>
             <Cell dataKey={labelskeys[0]} />
           </Column>
 
-          <Column width={150} resizable className="column">
+          <Column width={350} resizable className="column">
             <HeaderCell>{labels[1]}</HeaderCell>
             <Cell dataKey={labelskeys[1]} />
           </Column>

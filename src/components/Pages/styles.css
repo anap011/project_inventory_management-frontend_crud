@@ -1,49 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "rsuite/dist/rsuite.css";
 
-/* Estilos generales */
-
-/* Dashboard */
 .dashboard {
-    width: 130vh;
-    flex-grow: 1;
-    padding: 20px;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-    margin-left: 9%;
-    margin-right: 5%;
-    overflow-y: auto; 
-    font-family: "Nunito Sans", sans-serif;
-  }
+  width: 130vh;
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  margin-left: 9%;
+  margin-right: 5%;
+  overflow-y: auto; 
+  font-family: "Nunito Sans", sans-serif;
+}
 
- .rs-table rs-table-row{
+.rs-table rs-table-row{
   height:450;
- }
+}
 
-  .titleTable {
-    margin-bottom: 3%;
-    font-size: 2.5rem;
-  }
+.titleTable {
+  margin-bottom: 3%;
+  font-size: 2.5rem;
+}
 
-  /* TABLE HEADER*/
-  .rs-table-row-header, .rs-table-row-header .rs-table-cell{
-    background-color: #ebebeb;
-    font-weight: bold;
-  }
+.rs-table-row-header, .rs-table-row-header .rs-table-cell{
+  background-color: #ebebeb;
+  font-weight: bold;
+}
 
-  .column {
-    font-size: 1rem;
-    color: black;
-    background-color: #ebebeb;
-    
-  }
+.rs-table-row {
+  border: 1px solid #969595;
+}
 
-  .buttom-add {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 2%;
-    width: 100%; /* Ajustar el ancho para ocupar todo el contenedor */
-  }
-/* Dashboard */
+.column {
+  font-size: 1rem;
+  color: black;
+  background-color: #ebebeb;
+  
+}
 
+.buttom-add {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2%;
+  width: 100%;
+}

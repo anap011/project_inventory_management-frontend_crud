@@ -6,9 +6,9 @@ import PostModals from './Modals/PostModals';
 import PutModals from './Modals/PutModals';
 import DeleteModals from './Modals/DeleteModals';
 
-const labels = ['Id', 'Nombre *', 'Descripción', 'Stock *', 'Lote Id *', 'Prov Id *'];
-const labelskeys = ['product_id', 'product_Name', 'description', 'stock', 'batch_id', 'supplier_id'];
-const endpoint = "product";
+const labels = ['Id', 'Nombre', 'Descripción', 'Cantidad', 'Lote Id', 'Proveedor Id'];
+const labelskeys = ['producto_Id', 'producto_Nombre', 'descripcion', 'cantidad', 'lote_id', 'proveedor_id'];
+const endpoint = "productos";
 
 const Productos = () => {
   const {Column, HeaderCell, Cell} = Table;
@@ -32,7 +32,7 @@ const Productos = () => {
   // Delete Modals
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const handleOpenDeleteModal = (rowData) => {
-    setIdRow(rowData.product_id);
+    setIdRow(rowData.producto_Id);
     setOpenDeleteModal(true);
   };
   const handleCloseDeleteModal = () => setOpenDeleteModal(false);

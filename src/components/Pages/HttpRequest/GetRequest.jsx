@@ -9,7 +9,7 @@ const GetRequest = (endpoint) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${url}/${endpoint}`);
+                const response = await fetch(`${url}/v1/${endpoint}`);
                 const result = await response.json();
                 setData(result);
             } catch (err) {
@@ -21,7 +21,7 @@ const GetRequest = (endpoint) => {
     });
 
     if (data==null){
-        return console.log("DATA ESTÁ VACIO"); 
+        return console.log(""); 
     }else{
         return { data, error };
     }

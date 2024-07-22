@@ -6,9 +6,9 @@ import PostModals from './Modals/PostModals';
 import PutModals from './Modals/PutModals';
 import DeleteModals from './Modals/DeleteModals';
     
-const labels = (['Id','Nombre *']);
-const labelskeys = (['supplier_Id', 'supplier_Name']);
-const endpoint = "supplier";
+const labels = (['Id','Nombre']);
+const labelskeys = (['proveedor_Id', 'proveedor_Nombre']);
+const endpoint = "proveedores";
 
 const Proveedores = () => {
   const {Column, HeaderCell, Cell} = Table;
@@ -32,7 +32,7 @@ const Proveedores = () => {
   // Delete Modals
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const handleOpenDeleteModal = (rowData) => {
-    setIdRow(rowData.supplier_Id);
+    setIdRow(rowData.proveedor_Id);
     setOpenDeleteModal(true);
   };
   const handleCloseDeleteModal = () => setOpenDeleteModal(false);
@@ -54,12 +54,12 @@ const Proveedores = () => {
             console.log(rowData);
           }} >
 
-          <Column width={60} align="center" resizable  className="column">
+          <Column width={200} align="center" resizable  className="column">
             <HeaderCell className="column-item" >{labels[0]}</HeaderCell>
             <Cell dataKey={labelskeys[0]} />
           </Column>
 
-          <Column width={150} resizable className="column">
+          <Column width={350} resizable className="column">
             <HeaderCell>{labels[1]}</HeaderCell>
             <Cell dataKey={labelskeys[1]} />
           </Column>

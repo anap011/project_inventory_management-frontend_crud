@@ -17,7 +17,7 @@ const DeleteModals = ({ open, handleClose, endpoint, idRow}) => {
             }
         };
         try {
-            const response = await fetch(`${url}/${endpoint}/delete/id=${idRow}`, options);
+            const response = await fetch(`${url}/v1/${endpoint}/${idRow}`, options);
             if (response.ok){
                 toaster.push(
                     <Notification type="success" header="Eliminación Exitosa">

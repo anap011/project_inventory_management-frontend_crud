@@ -43,7 +43,7 @@ const PutModals = ({ open, handleClose, labels, labelskeys, endpoint, selectedRo
                 body: JSON.stringify(formData)
             };
             try {
-                const response = await fetch(`${url}/${endpoint}/edit/id=${inputs[labelskeys[0]]}`, options);
+                const response = await fetch(`${url}/v1/${endpoint}/${inputs[labelskeys[0]]}`, options);
                 if (response.ok){
                     toaster.push(
                         <Notification type="success" header="Actualización Exitosa">

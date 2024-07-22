@@ -14,7 +14,7 @@ const Login = () => {
             username: username,
             password_hash: password_hash
         };
-        fetch('https://project-inventory-management-backend-login.vercel.app/login', {
+        fetch('http://localhost:3001/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
